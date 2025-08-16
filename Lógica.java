@@ -122,6 +122,7 @@ public class Lógica{
         }
         med = soma/ notas.length;
         System.out.println("A media é " + med);
+        System
 
 
     }
