@@ -140,6 +140,6 @@ public class Lógica{
                 break;
             }
         }
-        Ssytem.out.printf("%d! é %d.", fat, res);
+        System.out.printf("%d! é %d.", fat, res);
     }
 }
