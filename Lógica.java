@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Lógica{
     public static void main(String[] args){
         //Analisador de media
@@ -106,7 +105,7 @@ public class Lógica{
         for(int j = 0; j < nomes.length; j++){
             System.out.printf("O aluno %s esta na %dª posição  da chamada.%n", nomes[j], j);
         }*/
-        int [] notas = new int [4];
+        /*int [] notas = new int [4];
         for(int i = 0; i < notas.length; i++){
             notas[i] = sc.nextInt();
             if(notas[i] < 0  || notas[i] > 10){
@@ -121,9 +120,26 @@ public class Lógica{
             soma = soma + notas[i];
         }
         med = soma/ notas.length;
-        System.out.println("A media é " + med);
-        System
-
-
+        System.out.println("A media é " + med);*/
+        //Soma de 1 a n
+        System.out.println("Digite o valor der n: ");
+        int n = sc.nextInt();
+        int soma = 0;
+        for(int i  = 0; i < n; i++){
+            soma = soma + i;
+        }
+        System.out.printf("O resultado da soma de 1 a %d é igual a %d", n, soma);
+        //fatorial
+        System.out.println("Qual é o numero que vc deseja o fatorial? ");
+        int fat, res;
+        fat = sc.nextInt();
+        res = 0;
+        for(int i = fat - 1; i <= fat; i--){
+            res = fat * i;
+            if(i == 1){
+                break;
+            }
+        }
+        Ssytem.out.printf("%d! é %d.", fat, res);
     }
 }
