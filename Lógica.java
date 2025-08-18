@@ -128,17 +128,15 @@ public class Lógica{
         for(int i  = 0; i < n; i++){
             soma = soma + i;
         }
-        System.out.printf("O resultado da soma de 1 a %d é igual a %d", n, soma);
+        System.out.printf("O resultado da soma de 1 a %d é igual a %d%n", n, soma);
         //fatorial
         System.out.println("Qual é o numero que vc deseja o fatorial? ");
         int fat, res;
         fat = sc.nextInt();
-        res = 0;
-        for(int i = fat - 1; i <= fat; i--){
-            res = fat * i;
-            if(i == 1){
-                break;
-            }
+        res = 1;
+        for(int i = 2; i <= fat; i++){
+            res = res * i;
+
         }
         System.out.printf("%d! é %d.", fat, res);
     }
