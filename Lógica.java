@@ -122,7 +122,7 @@ public class Lógica{
         med = soma/ notas.length;
         System.out.println("A media é " + med);*/
         //Soma de 1 a n
-        System.out.println("Digite o valor der n: ");
+        /*System.out.println("Digite o valor der n: ");
         int n = sc.nextInt();
         int soma = 0;
         for(int i  = 0; i < n; i++){
@@ -138,6 +138,22 @@ public class Lógica{
             res = res * i;
 
         }
-        System.out.printf("%d! é %d.", fat, res);
+        System.out.printf("%d! é %d.", fat, res);*/
+        //Menos inteiro no array
+        System.out.println("Digite o tamanho do array: ");
+        int tam = sc.nextInt();
+        int[] lista = new int[tam];
+        System.out.println("Digite os elementos do array: ");
+        for(int j = 0; j < tam; j++){
+            lista[j] = sc.nextInt();
+        }
+        int saida = lista[0];
+        for(int i = 1; i < tam; i++){
+            if(lista[i] < saida){
+                saida = lista[i];
+            }
+
+        }
+        System.out.println(saida);
     }
 }
