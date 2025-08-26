@@ -140,7 +140,7 @@ public class Lógica{
         }
         System.out.printf("%d! é %d.", fat, res);*/
         //Menos inteiro no array
-        System.out.println("Digite o tamanho do array: ");
+        /*System.out.println("Digite o tamanho do array: ");
         int tam = sc.nextInt();
         int[] lista = new int[tam];
         System.out.println("Digite os elementos do array: ");
@@ -154,6 +154,32 @@ public class Lógica{
             }
 
         }
-        System.out.println(saida);
+        System.out.println(saida);*/
+        //Elementos maior que 10
+        /*int[] array = new int[5];
+        System.out.println("Digite os elementos do array: ");
+        for(int i = 0; i < 5; i++){
+            array[i] = sc.nextInt();
+
+
+        }
+        for(int i = 0; i < 5; i++){
+            if (array[i] > 10){
+                System.out.println(array[i]);
+            }
+        }*/
+        //Matriz
+        int[][] matriz = new int [2][2];
+        int linha1, linha2, det;
+        System.out.println("Quais elementos fazem parte da matriz");
+        for(int i = 0; i < 2; i++){
+            for(int j = 0; j < 2; j++){
+                matriz[i][j] = sc.nextInt();
+            }
+        }
+        linha1 = matriz[0][0] * matriz[1][1];
+        linha2 = matriz[0][1] * matriz[1][0];
+        det = linha1 - linha2;
+        System.out.printf("O determinante da matriz é %d",det);
     }
 }
