@@ -1,10 +1,11 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Lógica{
     public static void main(String[] args){
         //Analisador de media
         //Entrada de notas
         Scanner sc = new Scanner(System.in);
-        /*System.out.println("Ola, bem vindo ao analisador de media, por favor digite sua nota 1:  ");
+        System.out.println("Ola, bem vindo ao analisador de media, por favor digite sua nota 1:  ");
         int nota1 = sc.nextInt();
         System.out.println("Otimo, agora sua nota 2: ");
         int nota2 = sc.nextInt();
@@ -48,19 +49,19 @@ public class Lógica{
         //tentativas falhas demais
         if(i == 3){
             System.out.println("Conta Bloqueada. ");
-        }*/
+        }
 
         //Conversor de anos em dias
-        /*int ano = 365;
+        int ano = 365;
         int mes = 30;
         System.out.println("Digite a quantidade de anos, meses e dias, respectivamente: ");
         int anos = sc.nextInt();
         int meses = sc.nextInt();
         int dias = sc.nextInt();
         int dia = (anos * ano + meses * mes + dias);
-        System.out.printf("A quantidade de dias, apos a conversão de %d anos,%n%d meses %ne %d dias, é de %d dias. ", anos, meses, dias, dia);*/
+        System.out.printf("A quantidade de dias, apos a conversão de %d anos,%n%d meses %ne %d dias, é de %d dias. ", anos, meses, dias, dia);
         //escrever numeros e verificar se esta no conjunto
-        /*System.out.println("Digite 5 numeros ");
+        System.out.println("Digite 5 numeros ");
         int[] numeros = new int[5];
         numeros[0] = sc.nextInt();
         numeros[1] = sc.nextInt();
@@ -72,9 +73,9 @@ public class Lógica{
         int banana = sc.nextInt();
         int pos;
         pos = Arrays.binarySearch(numeros, banana);
-        System.out.printf("O numero %d está no conjunto ? %s", banana, pos > 0 ? "sim":"não");*/
+        System.out.printf("O numero %d está no conjunto ? %s", banana, pos > 0 ? "sim":"não");
         //calculadora de salarios
-        /*System.out.println("Digite seu salario: ");
+        System.out.println("Digite seu salario: ");
         int sm = 1412;
         double sl = sc.nextDouble();
         double slm = sl / sm;
@@ -85,30 +86,30 @@ public class Lógica{
         apop = sc.nextDouble();
         apop1 = apop - 1;
         apop2 = apop + 1;
-        System.out.printf("O numero %.2f tem o antecessor %.2f e o sucessor %.2f. ", apop, apop1, apop2);*/
-        /*System.out.println("Digite o numero que vc quer a tabuada: ");
+        System.out.printf("O numero %.2f tem o antecessor %.2f e o sucessor %.2f. ", apop, apop1, apop2);
+        System.out.println("Digite o numero que vc quer a tabuada: ");
         int n = sc.nextInt();
         int tabu = 0;
-        for(int i = 0; i < 11; i++){
-            tabu = n * i;
-            System.out.printf("%d * %d = %d%n", n, i, tabu);
-        }*/
+        for(int j = 0; j < 11; j++){
+            tabu = n * j;
+            System.out.printf("%d * %d = %d%n", n, j, tabu);
+        }
         //Chamada de nomes
-        /*System.out.println("Qual o tamanho da chamada? ");
+        System.out.println("Qual o tamanho da chamada? ");
         int tam = sc.nextInt();
         String[] nomes = new String[tam];
         System.out.println("Digite os nomes da chamada: ");
-        for(int i = 0; i < nomes.length; i++){
-            nomes[i] = sc.nextLine();
+        for(int k = 0; k < nomes.length; k++){
+            nomes[k] = sc.nextLine();
         }
         Arrays.sort(nomes);
-        for(int j = 0; j < nomes.length; j++){
-            System.out.printf("O aluno %s esta na %dª posição  da chamada.%n", nomes[j], j);
-        }*/
-        /*int [] notas = new int [4];
-        for(int i = 0; i < notas.length; i++){
-            notas[i] = sc.nextInt();
-            if(notas[i] < 0  || notas[i] > 10){
+        for(int a = 0; a < nomes.length; a++){
+            System.out.printf("O aluno %s esta na %dª posição  da chamada.%n", nomes[a], a);
+        }
+        int [] notas = new int [4];
+        for(int b = 0; b < notas.length; b++){
+            notas[b] = sc.nextInt();
+            if(notas[b] < 0  || notas[b] > 10){
                 System.out.println("nota inavalida. ");
                 break;
             }
@@ -116,65 +117,65 @@ public class Lógica{
 
         int soma = 0;
         int med = 0;
-        for(int i = 0; i < notas.length; i++){
-            soma = soma + notas[i];
+        for(int g = 0; g < notas.length; g++){
+            soma = soma + notas[g];
         }
         med = soma/ notas.length;
-        System.out.println("A media é " + med);*/
+        System.out.println("A media é " + med);
         //Soma de 1 a n
-        /*System.out.println("Digite o valor der n: ");
-        int n = sc.nextInt();
-        int soma = 0;
-        for(int i  = 0; i < n; i++){
-            soma = soma + i;
+        System.out.println("Digite o valor der n: ");
+        int l = sc.nextInt();
+        int som = 0;
+        for(int z = 0; z < l; z++){
+            som = som + z;
         }
-        System.out.printf("O resultado da soma de 1 a %d é igual a %d%n", n, soma);
+        System.out.printf("O resultado da soma de 1 a %d é igual a %d%n", l, som);
         //fatorial
         System.out.println("Qual é o numero que vc deseja o fatorial? ");
         int fat, res;
         fat = sc.nextInt();
         res = 1;
-        for(int i = 2; i <= fat; i++){
-            res = res * i;
+        for(int d = 2; d <= fat; d++){
+            res = res * d;
 
         }
-        System.out.printf("%d! é %d.", fat, res);*/
+        System.out.printf("%d! é %d.", fat, res);
         //Menos inteiro no array
-        /*System.out.println("Digite o tamanho do array: ");
-        int tam = sc.nextInt();
-        int[] lista = new int[tam];
+        System.out.println("Digite o tamanho do array: ");
+        int tama = sc.nextInt();
+        int[] lista = new int[tama];
         System.out.println("Digite os elementos do array: ");
-        for(int j = 0; j < tam; j++){
-            lista[j] = sc.nextInt();
+        for(int v = 0; v < tama; v++){
+            lista[v] = sc.nextInt();
         }
         int saida = lista[0];
-        for(int i = 1; i < tam; i++){
-            if(lista[i] < saida){
-                saida = lista[i];
+        for(int m = 1; m < tama; m++){
+            if(lista[m] < saida){
+                saida = lista[m];
             }
 
         }
-        System.out.println(saida);*/
+        System.out.println(saida);
         //Elementos maior que 10
-        /*int[] array = new int[5];
+        int[] array = new int[5];
         System.out.println("Digite os elementos do array: ");
-        for(int i = 0; i < 5; i++){
-            array[i] = sc.nextInt();
+        for(int t = 0; t < 5; t++){
+            array[t] = sc.nextInt();
 
 
         }
-        for(int i = 0; i < 5; i++){
-            if (array[i] > 10){
-                System.out.println(array[i]);
+        for(int q = 0; q < 5; q++){
+            if (array[q] > 10){
+                System.out.println(array[q]);
             }
-        }*/
+        }
         //Matriz
         int[][] matriz = new int [2][2];
         int linha1, linha2, det;
         System.out.println("Quais elementos fazem parte da matriz");
-        for(int i = 0; i < 2; i++){
+        for(int w = 0; w < 2; w++){
             for(int j = 0; j < 2; j++){
-                matriz[i][j] = sc.nextInt();
+                matriz[w][j] = sc.nextInt();
             }
         }
         linha1 = matriz[0][0] * matriz[1][1];
