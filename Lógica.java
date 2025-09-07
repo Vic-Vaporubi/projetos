@@ -182,5 +182,23 @@ public class Lógica{
         linha2 = matriz[0][1] * matriz[1][0];
         det = linha1 - linha2;
         System.out.printf("O determinante da matriz é %d",det);
+        //Menu
+        System.out.println("Selecione a opção que deseja, 1-listar, 2-adicionar, 3-buscar, 4-sair");
+        String[] resistores = new String[5];
+        String[] valores = new String[5];
+        for(int r = 0; r < 5; r++){
+            resistores[r] = sc.next();
+            valores[r] = sc.next();
+        }
+        while(0 < 1){
+            int escolha = sc.nextInt();
+            if (escolha == 1){
+                for(int y = 0; y < 5; y++){
+                    System.out.printf(resistores[y]);
+                    System.out.printf(valores[y]);
+                }
+            }
+        }
+
     }
 }
