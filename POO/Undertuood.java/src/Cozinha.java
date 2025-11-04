@@ -1,7 +1,7 @@
 public class Cozinha implements Restaurante {
     private String cozinheiro;
     private String atuacao;
-    private int reservas;
+    private int reserva;
     private boolean restaurantecheio;
 
     public Cozinha(String c, String e){
@@ -10,7 +10,6 @@ public class Cozinha implements Restaurante {
     }
 
     public String getCozinheiro(){
-        System.out.println("Cozinheiro: " + this.cozinheiro);
         return this.cozinheiro;
     }
     public void setCozinheiro(String c){
@@ -23,21 +22,20 @@ public class Cozinha implements Restaurante {
     public void setAtuacao(String e){
         this.atuacao = e;
     }
-    public int getReservas(){
-        return this.reservas;
+    public int getReserva(){
+        return this.reserva;
     }
-    public void setReservas(int r){
-        if (reservas >= 15){
+    public void setReserva(int r){
+        if (r >= 15 || r < 0 || getRestaurtantecheio() || this.reserva == 15){
             this.restaurantecheio = true;
             System.out.println("Infelizmente, o restaurante está cheio no momento.");
         } else {
             this.restaurantecheio = false;
-            reservas = r;
+            reserva = reserva + r;
         }
         
     }
     public boolean getRestaurtantecheio(){
-        System.out.println("Restaurante cheio: " + restaurantecheio);
         return restaurantecheio;
     }
     public void setRestaurantecheio(boolean rc){
@@ -65,7 +63,7 @@ public class Cozinha implements Restaurante {
         if(getRestaurtantecheio()){
             System.out.println("Não há mais reservas disponíveis, o restaurante está cheio.");
         } else{
-            setReservas(getReservas() + 1);
+            setReserva(getReserva() + 1);
             System.out.println("Reserva realizada com sucesso!");
         }
     }
